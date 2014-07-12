@@ -15,7 +15,7 @@
       <tr ng-repeat="item in cart.getItems() track by $index" class="cart-item">
         <td>{{item.name}}</td>
         <td><price value="item.price" /></td>
-        <td><a href class="btn btn-default btn-sm" ng-click="cart.deleteArticle(article);">Entfernen</a></td>
+        <td><a href class="btn btn-default btn-sm" ng-click="cart.deleteArticle(item);">Entfernen</a></td>
       </tr>
       <tr>
         <td>{{cart.getItems().length}} Artikel</td>
