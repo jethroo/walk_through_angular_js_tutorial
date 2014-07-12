@@ -1,4 +1,4 @@
-walk_through_angular_js_tutorial
+# Walk through AngularJS Tutorial
 ================================
 
-Keeping track of my tutorial progress of a angularjs.de tutorial
+[AngularJS-Tutorial für Einsteiger](http://angularjs.de/artikel/angularjs-tutorial-deutsch)
