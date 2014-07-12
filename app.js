@@ -1,4 +1,13 @@
 angular.module('tutorialApp', ['ngAnimate'])
+  .directive('price', function(){
+    return {
+      restrict: 'E',
+      scope: {
+        value: '='
+      },
+      templateUrl: 'price.tpl.html' 
+    };
+  })
   .factory('Cart', function() {
     var items = [];
     return {
@@ -27,3 +36,4 @@ angular.module('tutorialApp', ['ngAnimate'])
   .controller('CartCtrl', function($scope, Cart){
     $scope.cart = Cart;
   });
+

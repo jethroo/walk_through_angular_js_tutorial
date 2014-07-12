@@ -10,9 +10,7 @@
   background-color: red;
 }
 
-.cart-item.ng-enter-active {
-  background-color: white;
-}
+.cart-item.ng-enter-active,
 .cart-item.ng-leave-active {
   background-color: white;
 }

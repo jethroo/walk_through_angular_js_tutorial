@@ -14,7 +14,7 @@
     <table ng-show="cart.getItems().length" class="table">
       <tr ng-repeat="item in cart.getItems() track by $index" class="cart-item">
         <td>{{item.name}}</td>
-        <td>{{item.price | currency}}</td>
+        <td><price value="item.price" /></td>
         <td><a href class="btn btn-default btn-sm" ng-click="cart.deleteArticle(article);">Entfernen</a></td>
       </tr>
       <tr>
@@ -30,7 +30,7 @@
     <tr ng-repeat="article in articles | filter:search">
      <td>{{article.id}}</td>
      <td>{{article.name}}</td>
-     <td>{{article.price}}</td>
+     <td><price value="article.price" /></td>
      <td><a href class="btn btn-default btn-sm" ng-click="cart.addArticle(article);">Hinzufügen</a></td>
    </tr>
  </table>
