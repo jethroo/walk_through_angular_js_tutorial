@@ -1,0 +1,18 @@
+.cart-item.ng-enter {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+  background-color: green;
+}
+
+.cart-item.ng-leave {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+  background-color: red;
+}
+
+.cart-item.ng-enter-active {
+  background-color: white;
+}
+.cart-item.ng-leave-active {
+  background-color: white;
+}
