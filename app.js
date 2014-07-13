@@ -1,4 +1,10 @@
-angular.module('tutorialApp', ['ngAnimate'])
+angular.module('tutorialApp', ['ngAnimate','ngRoute'])
+  .config(function($routeProvider) {
+    $routeProvider
+      .when('/', { templateUrl: 'articles.html' })
+      .when('/about', { template: 'Über unsere Pizzeria' })
+      .otherwise({ redirectTo: '/' });
+  })
   .directive('price', function(){
     return {
       restrict: 'E',
