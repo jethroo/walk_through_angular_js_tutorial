@@ -1,4 +1,4 @@
-myApp().factory('Cart', function() {
+angular.module('tutorialApp').factory('Cart', function() {
   var items = [];
   return {
     getItems: function() {
@@ -9,9 +9,9 @@ myApp().factory('Cart', function() {
     },
     deleteArticle: function(article) {
       index = items.indexOf(article);
-      if (index > -1)
+      if (index > -1) {
         items.splice(index, 1);
-      end
+      }
     },
     sum: function() {
       return items.reduce(function(total, article) {
