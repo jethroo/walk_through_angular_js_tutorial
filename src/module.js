@@ -1,13 +1,21 @@
-var tutorial_app = angular.module('tutorialApp', ['ngAnimate','ngRoute'])
+function moduleName() {
+  return 'tutorialApp'
+}
 
-tutorial_app.config(function($routeProvider) {
+function myApp() {
+  return angular.module(moduleName())
+}
+
+angular.module(moduleName(), ['ngAnimate','ngRoute'])
+
+myApp().config(function($routeProvider) {
   $routeProvider
     .when('/', { templateUrl: 'articles.html' })
     .when('/about', { template: 'Über unsere Pizzeria' })
     .otherwise({ redirectTo: '/' });
 })
 
-tutorial_app.directive('price', function(){
+myApp().directive('price', function(){
   return {
     restrict: 'E',
     scope: {

@@ -1,3 +1,3 @@
-tutorial_app.controller('CartCtrl', function($scope, Cart){
+myApp().controller('CartCtrl', function($scope, Cart){
   $scope.cart = Cart;
 });

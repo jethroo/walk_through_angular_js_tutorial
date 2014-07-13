@@ -1,4 +1,4 @@
-tutorial_app.factory('Cart', function() {
+myApp().factory('Cart', function() {
   var items = [];
   return {
     getItems: function() {
