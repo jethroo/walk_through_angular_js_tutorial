@@ -1,6 +1,3 @@
-
-
-
 angular.module('tutorialApp', ['ngAnimate','ngRoute'])
 
 angular.module('tutorialApp').config(function($routeProvider) {

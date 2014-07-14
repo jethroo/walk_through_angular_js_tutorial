@@ -12,3 +12,13 @@ To get a feeling how an angular app can be structured i applied methods proposed
 Since we let gulp handle the `app.js` we have to trigger it:
   * `gulp js` task for generating the minimized js
   * `gulp watch` will listen for changes in `src/**` and will regenerate the file
+
+## Starting the app
+
+I usually just opened the `index.html` in a browser. But this project also provides
+a server serving static files, which can be run with:
+
+`node server.js` or
+`npm start`
+
+Your project is served at http://localhost:8080
