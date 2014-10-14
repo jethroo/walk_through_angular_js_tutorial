@@ -7,6 +7,17 @@ The tutorial by [sbrink](https://github.com/sbrink): [AngularJS-Tutorial für Ei
 To get a feeling how an angular app can be structured i applied methods proposed by Jeff Dickey in
 [best-practices-for-building-angular-js](https://medium.com/@dickeyxxx/best-practices-for-building-angular-js-apps-266c1a4a6917).
 
+## Testing with karma
+
+[Tutorial](http://www.ng-newsletter.com/advent2013/#!/day/19)
+
+Karma Command Line Interface 
+http://stackoverflow.com/a/22329409/1657377
+
+```
+npm install -g karma-cli
+``` 
+
 ## Dependencies
 
 * node
@@ -29,4 +40,4 @@ a server serving static files, which can be run with:
 `node server.js` or
 `npm start`
 
-Your project is served at http://localhost:8080
+Your project is served at [localhost:8080](http://localhost:8080)
