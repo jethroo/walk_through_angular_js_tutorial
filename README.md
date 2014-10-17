@@ -18,6 +18,8 @@ http://stackoverflow.com/a/22329409/1657377
 npm install -g karma-cli
 ``` 
 
+How to mock $http with [$httpBackend](calls https://docs.angularjs.org/api/ngMock/service/$httpBackend)
+
 ## Dependencies
 
 * node

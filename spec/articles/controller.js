@@ -30,7 +30,8 @@ describe('Unit: ArticlesCtrl', function() {
     expect(scope.cart).toEqual(mockCart);
     expect(scope.articles).toEqual(
        [
-         { id: 1,
+         { 
+           id: 1,
            name: "Pizza Vegetaria",
            price: 5
          }
