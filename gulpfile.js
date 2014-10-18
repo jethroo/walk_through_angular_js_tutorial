@@ -3,6 +3,10 @@ var concat = require('gulp-concat')
 var uglify = require('gulp-uglify')
 var ngAnnotate = require('gulp-ng-annotate')
 var karma = require('gulp-karma');
+var notify = require('gulp-notify');
+var growl = require('gulp-notify-growl');
+var jscs = require('gulp-jscs');
+var jshint = require('gulp-jshint');
 
 gulp.task('js', function () {
   gulp.src(['src/**/module.js', 'src/**/*.js'])
@@ -44,4 +48,9 @@ gulp.task('default', function() {
       configFile: 'karma.conf.js',
       action: 'watch'
     }));
+});
+
+gulp.task('jscs', function() {
+  gulp.src(['src/**/module.js', 'src/**/*.js'])
+    .pipe(jscs());
 });

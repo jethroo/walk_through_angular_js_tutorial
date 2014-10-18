@@ -1,4 +1,4 @@
-angular.module('tutorialApp').factory('Cart', function() {
+angular.module("tutorialApp").factory("Cart", function() {
   var items = [];
   return {
     getItems: function() {
