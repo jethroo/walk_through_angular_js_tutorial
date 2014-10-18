@@ -1,5 +1,18 @@
 # Walk through AngularJS Tutorial
 
+This is an example app based on several different tutorials each covering different aspects which one need
+to adress while building applications for production environments.
+
+## Dependencies
+
+This project relies on follwinging tools which have to be installed first:
+
+* node
+* npm
+* gulp
+
+## Getting started with a simple shopping cart Single Page App (SPA)
+
 The tutorial by [sbrink](https://github.com/sbrink): [AngularJS-Tutorial für Einsteiger](http://angularjs.de/artikel/angularjs-tutorial-deutsch)
 
 ## Refactoring the tutorial app
@@ -30,11 +43,9 @@ gulp test
 
 it will run the test suite.
 
-## Dependencies
+## Code Style and Linting 
 
-* node
-* npm
-* gulp
+From blogpost of [isimmons](https://github.com/isimmons): [using-jscs-and-jshint-with-gulp](http://isimmons.github.io/blog/2014/02/12/using-jscs-and-jshint-with-gulp/).
 
 ## Generating `app.js`
 
