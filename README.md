@@ -3,6 +3,9 @@
 This is an example app based on several different tutorials each covering different aspects which one need
 to adress while building applications for production environments.
 
+## Build status
+[![Build Status](https://secure.travis-ci.org/jethroo/walk_through_angular_js_tutorial.png)](http://travis-ci.org/jethroo/walk_through_angular_js_tutorial)
+
 ## Dependencies
 
 This project relies on follwinging tools which have to be installed first:
