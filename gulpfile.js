@@ -65,4 +65,6 @@
       .pipe(jshint.reporter("jshint-stylish"));
   });
 
+  gulp.task("ci", [ "test", "jscs", "lint" ]);
+
 }());

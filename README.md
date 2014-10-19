@@ -61,6 +61,10 @@ I sticked to a rather simple one:
 
 jsHint looks for `.jshintrc` which i borrowed from [haschek](https://gist.github.com/haschek) [gist](https://gist.github.com/haschek/2595796)
 
+## Travis
+
+[Integrating Gulp with Travis-CI](http://ponyfoo.com/articles/my-first-gulp-adventure)
+
 ## Generating `app.js`
 
 First we have to run `npm install` for setting up the node_modules needed by gulp.
