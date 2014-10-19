@@ -47,6 +47,20 @@ it will run the test suite.
 
 From blogpost of [isimmons](https://github.com/isimmons): [using-jscs-and-jshint-with-gulp](http://isimmons.github.io/blog/2014/02/12/using-jscs-and-jshint-with-gulp/).
 
+### Configuration files
+
+jscs is looking for a configuration in `.jscsrc`. 
+
+I sticked to a rather simple one:
+
+```
+{
+  "preset": "jquery"
+}
+```
+
+jsHint looks for `.jshintrc` which i borrowed from [haschek](https://gist.github.com/haschek) [gist](https://gist.github.com/haschek/2595796)
+
 ## Generating `app.js`
 
 First we have to run `npm install` for setting up the node_modules needed by gulp.

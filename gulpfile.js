@@ -8,18 +8,6 @@ var growl = require('gulp-notify-growl');
 var jscs = require('gulp-jscs');
 var jshint = require('gulp-jshint');
 
-gulp.task('js', function () {
-  gulp.src(['src/**/module.js', 'src/**/*.js'])
-  .pipe(concat('app.js'))
-  .pipe(ngAnnotate())
-  .pipe(uglify())
-  .pipe(gulp.dest('.'))
-})
-
-gulp.task('watch', ['js'], function () {
-  gulp.watch('src/**/*.js', ['js'])
-})
-
 var testFiles = [
       'node_modules/angular/angular.js',
       'node_modules/angular-mocks/angular-mocks.js',
@@ -28,6 +16,22 @@ var testFiles = [
       'app.js',
       'spec/**/*.js'
   ];
+
+var sources = ['src/**/module.js', 'src/**/*.js'];
+
+gulp.task('js', function () {
+  gulp.src(sources)
+  .pipe(concat('app.js'))
+  .pipe(ngAnnotate())
+  .pipe(uglify())
+  .pipe(gulp.dest('.'))
+})
+
+gulp.task('watch', ['js'], function () {
+  gulp.watch(sources, ['js'])
+})
+
+
 
 gulp.task('test', function() {
   // Be sure to return the stream
@@ -51,6 +55,17 @@ gulp.task('default', function() {
 });
 
 gulp.task('jscs', function() {
-  gulp.src(['src/**/module.js', 'src/**/*.js'])
+  gulp.src(sources)
     .pipe(jscs());
+});
+
+gulp.task('lint', function() {
+    gulp.src(sources)
+        .pipe(jshint('.jshintrc'))
+        .pipe(jshint.reporter('jshint-stylish'))
+        .pipe(jshint.reporter('fail'))
+        .pipe(notify({
+            title: 'JSHint',
+            message: 'JSHint Passed. Let it fly!',
+        }))
 });
